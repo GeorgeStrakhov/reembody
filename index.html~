@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reembody.me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reembody.me">
+    <meta name="author" content="Kevin Moore">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	  <link href="css/reembody.css" rel="stylesheet">
+	  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	  <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--google analytics -->
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35062465-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+    <!-- end of google analytics -->
+  </head>
+
+  <body>
+    <div id="frame" class="hidden-phone visible-desktop">
+        <div id="splash" class="hidden-phone visible-desktop"></div>
+    </div>
+    <div id="frame-m" class="hidden-desktop visible-phone">
+    	<div id="splash-m" class="hidden-desktop visible-phone"></div>
+    </div>
+    <div class="centered_button">
+      <p><a href="#" class="btn btn-large big_button" id="yesiwant">Yes, I want to keep in touch with my body</a></p>
+    </div>
+    <div id="form" class="hide">
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="http://reembody.us5.list-manage.com/subscribe/post?u=8040205a858f3298d86b934d1&amp;id=a2a5466880" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="mc-field-group">
+	          <label for="mce-EMAIL">Awesome, then please put your email below:</label><br />
+	          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+	        <div id="mce-responses" class="clear">
+		        <div class="response" id="mce-error-response" style="display:none"></div>
+		        <div class="response" id="mce-success-response" style="display:none"></div>
+	        </div>
+	        <br />
+	        <div class="clear"><input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large big_button"></div>
+        </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#yesiwant").on("click", function() {
+          $("#form").show("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
